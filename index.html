@@ -1,0 +1,3577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ovl - Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/logo (1).png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.jpg" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Подписка на новости</h3>
+
+            <p class="newsletter-desc">
+              Подпишитесь на<b> Ovl</b> , чтобы получать последние новости о товарах и скидках.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email адресс" required>
+
+          <button type="submit" class="btn-newsletter">Подписаться</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Серёжки из белого золота" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Кто-то в новом, только что купленном
+      </p>
+
+      <p class="toast-title">
+        Серёжки из белого золота
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">5 минут</time> назад
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-vk"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p style="text-decoration: underline;">
+            <b>Бесплатная доставка при заказе</b>
+             от 4000 &#8369;
+          </p>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">RU &#8369;</option>
+            <option value="eur">USD &dollar;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">Русский</option>
+            <option value="es-ES">Английский</option>
+            
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+        <a href="#" class="header-logo">
+          <img src="./assets/images/logo/logo (1).png" alt="Avl's logo" width="130" height="56">
+        </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Введите имя товара">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Главная</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Категории</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Электроника</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Компьютер</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Ноутбук</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Камера</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Планшет</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Наушники</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
+                      height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Мужчине</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Официальный</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Повседневная</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Спортивная</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Пиджаки</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Очки</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Девушке</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Парадная</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Повседневная</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Духи</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Косметика</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Сумочки</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/womens-banner.jpg" alt="women's fashion" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Электроника</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#" style="text-transform: initial;">Умные часы</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#" style="text-transform: initial;">Умный телевизор</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Клавиатура</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Мышь</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Микрофон</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="./assets/images/electronics-banner-2.jpg" alt="mouse collection" width="250" height="119">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Мужчине</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Футболки</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Шорты и джинсы</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Обувь</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Кошелек</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Девушке</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Платье и фрак</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Серьги</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Ожерелье</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Набор для макияжа</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title" style="text-transform: initial;">Ювелирные украшения</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Серьги</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Кольца</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Ожерелье</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Браслеты</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Парфюм</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Одежда духи</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Дезодорант</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Цветочный аромат</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#" style="text-transform: initial;">Освежитель воздуха</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Блог</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Горячие предложения</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Меню</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Главная</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Мужчине</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Рубашки</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title" style="text-transform: initial;">Шорты и джинсы</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Обувь</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Бумажник</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Девушке/p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title" style="text-transform: initial;">Платье и фрак</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Серьги</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Ожерелье</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title" style="text-transform: initial;">Набор для макияжа</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Ювелирные украшения</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Серьги</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Кольца</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Ожерелье</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Браслеты</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">Парфюм</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Одежда Духи</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Дезодорант</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Цветочный аромат</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">Освежитель воздуха</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Блог</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Горячие предложения</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Язык</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Русский</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Английский</a>
+              </li>
+
+              
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Валюта</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Рубли &#8369;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <div class="banner">
+
+      <div class="container">
+
+        <div class="slider-container has-scrollbar">
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-1.jpg" alt="women's latest fashion sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle" style="text-transform: initial;">Трендовый товар</p>
+
+              <h2 class="banner-title">Распродажа последней женской одежды</h2>
+
+              <p class="banner-text">
+                начиная с 700 &#8369; 
+              </p>
+
+              <a href="#" class="banner-btn">Купить сейчас</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-2.jpg" alt="солнцезащитные очки" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle" style="text-transform: initial;">Трендовые аксессуары</p>
+
+              <h2 class="banner-title" style="text-transform: initial;">солнцезащитные очки</h2>
+
+              <p class="banner-text">
+                начиная с &#8369; <b>720</b>
+              </p>
+
+              <a href="#" class="banner-btn">Купить сейчас</a>
+
+            </div>
+
+          </div>
+
+          <div class="slider-item">
+
+            <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
+
+            <div class="banner-content">
+
+              <p class="banner-subtitle" style="text-transform: initial;">Предложение о продаже</p>
+
+              <h2 class="banner-title">Новая модная летняя распродажа</h2>
+
+              <p class="banner-text">
+                начиная с &#8369; <b>1150</b>
+              </p>
+
+              <a href="#" class="banner-btn">Купить сейчас</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - CATEGORY
+    -->
+
+    <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/dress.svg" alt="dress & frock" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Платье и фрак</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/coat.svg" alt="Зимняя одежда" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Зимняя одежда</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/glasses.svg" alt="очки и линзы" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Очки и линзы</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/shorts.svg" alt="шорты и джинсы" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title" style="text-transform: initial;">Шорты и джинсы</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/tee.svg" alt="футболки" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Футболки</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/jacket.svg" alt="jacket" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Куртка</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/watch.svg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Часы</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="./assets/images/icons/hat.svg" alt="hat & caps" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Шляпы и кепки</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn" style="text-transform: initial;">Показать все</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="product-container">
+
+      <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Категории</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/dress.svg" alt="clothes" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">Одежда</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Шорты</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Шорты и джинсы</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">куртки</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">платье и фрак</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/shoes.svg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Обувь</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Спорт</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Официальная</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Повседневная</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Защитная обувь</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/jewelry.svg" alt="clothes" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Ювелирные украшения</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Сережки</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Кольца</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Ожерелье</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/perfume.svg" alt="perfume" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Духи</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Lalique L'amour</p>
+                      <data value="12" class="stock" title="Available Stock">12</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Дезодорант</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">куртка</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Платье и фрак</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/cosmetics.svg" alt="cosmetics" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Косметика</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Шампунь</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Солнцезащитный крем</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Средство для мытья тела</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Набор для макияжа</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/glasses.svg" alt="glasses" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">Очки</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Солнцезащитные очки</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Линзы</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="./assets/images/icons/bag.svg" alt="bags" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">Сумки</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Сумка для покупок</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name" style="text-transform: initial;">Рюкзак спортивный</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Портмоне</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Бумажник</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h3 class="showcase-heading" style="text-transform: initial;">Лучший продавец</h3>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title" style="text-transform: initial;">Женская спортивная майка</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>899 &#8381;</del>
+                      <p class="price">700 &#8381;</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/2.jpg" alt="мужские худи" class="showcase-img"
+                      width="75" height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title" style="text-transform: initial;">Мужские сандали Rainbow</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>3199 &#8381; </del>
+                      <p class="price">2999 &#8381;</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/3.jpg" alt="girls t-shirt" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title" style="text-transform: initial;">Женские леггинсы для йоги</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>2299 &#8381;</del>
+                      <p class="price">1999 &#8381;</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="./assets/images/products/4.jpg" alt="Шерстяная шапка для мужчин" class="showcase-img" width="75"
+                      height="75">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title" style="text-transform: initial;">Наушники V-MODA</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>7590 &#8381;</del>
+                      <p class="price">6999 &#8381;</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title" style="text-transform: initial;" style="text-transform: initial;">Новое поступление</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-1.jpg" alt="Платье для девочек" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;" style="text-transform: initial;">Платье для девочек</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category">Одежда</a>
+
+                      <div class="price-box">
+                        <p class="price">1999 &#8381;</p>
+                        <del>2200 &#8381;</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-2.jpg" alt="Розовая длиннорукавка для девочек" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;" style="text-transform: initial;">Розовая длиннорукавка для девочек</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Одежа</a>
+                  
+                      <div class="price-box">
+                        <p class="price">899 &#8381;</p>
+                        <del>1199 &#8381;</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/clothes-3.jpg" alt="Толстовка мужская Wicking & Breathable" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;" style="text-transform: initial;">Толстовка мужская Wicking & Breathable</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Одежда</a>
+                  
+                      <div class="price-box">
+                        <p class="price">6300 &#8381;</p>
+                        <del>3400 &#8381;</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shirt-1.jpg" alt="Рубашка с рукавом" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;" style="text-transform: initial;">Рубашка с рукавом</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category" style="text-transform: initial;">Мужская мода</a>
+                  
+                      <div class="price-box">
+                        <p class="price">7200 &#8381;</p>
+                        <del>3800 &#8381;</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-3.jpg" alt="МУЖСКАЯ флисовая куртка на молнии из пряжи" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Мужская флисовая куртка на молнии из пряжи</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Зимняя коллекция</a>
+                
+                      <div class="price-box">
+                        <p class="price">5000 &#8381;</p>
+                        <del>900 &#8381;</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-1.jpg" alt="мужские зимние кожаные куртки" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Мужские зимние кожаные куртки</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Зимняя коллекция</a>
+                
+                      <div class="price-box">
+                        <p class="price">3400 &#8381;</p>
+                        <del>2200 &#8381;</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jacket-3.jpg" alt="мужские зимние кожаные куртки" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Мужские зимние кожаные куртки</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Куртки</a>
+                
+                      <div class="price-box">
+                        <p class="price">4500 &#8381;</p>
+                        <del>5700 &#8381;</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shorts-1.jpg" alt="better basics french terry sweatshorts" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Французская махровая толстовка Better Basics</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Шорты</a>
+                
+                      <div class="price-box">
+                        <p class="price">2200 &#8381;</p>
+                        <del>1100 &#8381;</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Тенденции</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-1.jpg" alt="running & trekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Обувь для бега и треккинга - белая</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Спорт</a>
+            
+                      <div class="price-box">
+                        <p class="price">4900 &#8381;</p>
+                        <del>2500 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-2.jpg" alt="trekking & running shoes - black" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Треккинговые ботинки и кроссовки для бега - черный</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Спорт</a>
+            
+                      <div class="price-box">
+                        <p class="price">5020 &#8381;</p>
+                        <del>4019 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/party-wear-1.jpg" alt="womens party wear shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Женская обувь для вечеринок</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category" style="text-transform: initial;">Одежда для вечеринок</a>
+            
+                      <div class="price-box">
+                        <p class="price">4500 &#8381;</p>
+                        <del>5200 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-3.jpg" alt="sports claw women's shoes" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Спортивная женская обувь Claw</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Спорт</a>
+            
+                      <div class="price-box">
+                        <p class="price">6700 &#8381;</p>
+                        <del>4500 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/sports-6.jpg" alt="air tekking shoes - white" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Кроссовки для воздушного треккинга - белые</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Спорт</a>
+            
+                      <div class="price-box">
+                        <p class="price">5700 &#8381;</p>
+                        <del>6750 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-3.jpg" alt="Boot With Suede Detail" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Ботинок с замшевой отделкой</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">ботинки</a>
+            
+                      <div class="price-box">
+                        <p class="price">2000 &#8381;</p>
+                        <del>2500 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-1.jpg" alt="Мужская кожаная официальная обувь" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Мужская кожаная официальная обувь</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">официальная</a>
+            
+                      <div class="price-box">
+                        <p class="price">4700 &#8381;</p>
+                        <del>5600 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/shoe-2.jpg" alt="повседневная мужская коричневая обувь" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Повседневная мужская коричневая обувь</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Повседневная</a>
+            
+                      <div class="price-box">
+                        <p class="price">3760 &#8381;</p>
+                        <del>4200 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Топ</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/watch-3.jpg" alt="Женские наручные часы с браслетом " class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Женские наручные часы с браслетом </h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Часы</a>
+            
+                      <div class="price-box">
+                        <p class="price">2790 &#8381;</p>
+                        <del>3400 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-3.jpg" alt="Ожерелье золотое сердце" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Ожерелье золотое сердце</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category" style="text-transform: initial;">Ювелирные изделия</a>
+            
+                      <div class="price-box">
+                        <p class="price">9700 &#8381;</p>
+                        <del>11250 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/perfume.jpg" alt="Женские духи Gucci" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Женские духи Gucci</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Парфюм</a>
+            
+                      <div class="price-box">
+                        <p class="price">7200 &#8381;</p>
+                        <del>7800 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/ring.jpg" alt="Мужское кольцо из белого золото" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Мужское кольцо из белого золото</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Кольцо</a>
+            
+                      <div class="price-box">
+                        <p class="price">13499 &#8381;</p>
+                        <del>14999 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-2.jpg" alt="platinum zircon classic ring" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Классическое кольцо с платиновым цирконом</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category" style="text-transform: initial;">ювелирные изделия</a>
+            
+                      <div class="price-box">
+                        <p class="price">6500 &#8381;</p>
+                        <del>5500 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/watch-1.jpg" alt="Умные часы Vital Plus" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Умные часы Vital Plus</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Часы</a>
+            
+                      <div class="price-box">
+                        <p class="price">3499 &#8369;</p>
+                        <del>4499 &#8369;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jumpman.png" alt="jumpman" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Свитер с капюшоном Jumpman Air Jordan</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">косметика</a>
+            
+                      <div class="price-box">
+                        <p class="price">2699 &#8369;</p>
+                        <del>3399 &#8369;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="./assets/images/products/jewellery-1.jpg" alt="Серёжки из белого золота" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title" style="text-transform: initial;">Серёжки из белого золота</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category" style="text-transform: initial;">Ювелирные изделия</a>
+            
+                      <div class="price-box">
+                        <p class="price">24900 &#8381;</p>
+                        <del>27980 &#8381;</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title" style="text-transform: initial;">Скидка дня</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jumpman.png" alt="jumpman" class="showcase-img">
+                  </div>
+
+                  <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title" style="text-transform: initial;">Свитер с капюшоном Jumpman Air Jordan</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                       Большого вдали рукопись единственное всемогущая гор все своих знаках то.
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">2699 &#8381;</p>
+
+                      <del>3399 &#8381;</del>
+                    </div>
+
+                    <button class="add-cart-btn">добавить в корзину</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          уже продано: <b>20</b>
+                        </p>
+
+                        <p>
+                          доступно: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Поторопись ! Предложение скоро закончится
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">1</p>
+
+                          <p class="display-text">день</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Часа</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Минут</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="./assets/images/products/jewellery-1.jpg" alt="Серёжки из белого золота" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title" style="text-transform: initial;">Серёжки из белого золота</a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+                      Залетают что эта текст деревни.
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">24900 &#8369;</p>
+                      <del>27980 &#8369;</del>
+                    </div>
+              
+                    <button class="add-cart-btn">добавить в корзину</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> уже продано: <b>15</b> </p>
+              
+                        <p> доступно : <b>32</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Поторопитесь ! Предложение скоро закончится</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">2</p>
+                          <p class="display-text">Дня</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">4</p>
+                          <p class="display-text">Часа</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Минут</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Секунд</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+
+            <h2 class="title" style="text-transform: initial;">Новые товары</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="./assets/images/products/jacket-3.jpg" alt="Мужские зимние кожаные куртки" width="300" class="product-img default">
+                  <img src="./assets/images/products/jacket-4.jpg" alt="Мужские зимние кожаные куртки" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">Смокинг</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title" style="text-transform: initial;">Смокинг мужской</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">6800 &#8369;</p>
+                    <del>7999 &#8369;</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">распродажа</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">кроссовки</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Женские спортивные кроссовки</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">1499 &#8369;</p>
+                    <del>2499 &#8369;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/trainers-1.jpg" alt="Кроссовки для девушек спортивные" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/trainers-2.jpg" alt="Кроссовки для девушек спортивные" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Кроссовки</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Кроссовки для девушек спортивные</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">5599 &#8369;</p>
+                    <del>7499 &#8369;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/clothes-4.jpg" alt="Комфортные мужские шорты" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/clothes-5.jpg" alt="Комфортные мужские шорты" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">новое</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Шорты</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Комфортные мужские шорты</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">1499 &#8369;</p>
+                    <del>1749 &#8369;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shoe-2.jpg" alt="Повседневные мужские коричневые ботинки" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/shoe-2_1.jpg" alt="Повседневные мужские коричневые ботинки" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">повседневная</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Повседневные мужские коричневые ботинки</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">7999 &#8369;</p>
+                    <del>8549 &#8369;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-3.jpg" alt="Женские наручные часы с браслетом " class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/watch-4.jpg" alt="Женские наручные часы с браслетом " class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">распродажа</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">часы</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Женские наручные часы с браслетом </a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">2790 &#8369;</p>
+                    <del>3400 &#8369;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/watch-1.jpg" alt="Умные часы Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/watch-2.jpg" alt="Умные часы Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">часы</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Умные часы Vital Plus</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">9700 &#8381;</p>
+                    <del>11200 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/party-wear-1.jpg" alt="Womens Party Wear Shoes" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/party-wear-2.jpg" alt="Womens Party Wear Shoes" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">распродажа</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Каблуки</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Женская каблуки белые и чёрные</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">3700 &#8381;</p>
+                    <del>4200 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/jacket-1.jpg" alt="Черная мужская косуха куртка" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/jacket-2.jpg" alt="Черная мужская косуха куртка" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">куртка</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Черная мужская косуха куртка</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">13400 &#8381;</p>
+                    <del>14500 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/sports-4.jpg" alt="Trekking & Running Shoes - black" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/sports-2.jpg" alt="Trekking & Running Shoes - black" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">распродажа</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Спорт</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Кроссовки Adidas</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">4399 &#8381;</p>
+                    <del>5199 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shoe-1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img default"
+                    width="300">
+                  <img src="./assets/images/products/shoe-1_1.jpg" alt="Men's Leather Formal Wear shoes" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">официальная</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Мужская кожаная официальная обувь</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">4000 &#8381;</p>
+                    <del>5000 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="./assets/images/products/shorts-1.jpg" alt="Летние спортивные женские шорты"
+                    class="product-img default" width="300">
+                  <img src="./assets/images/products/shorts-2.jpg" alt="Летние спортивные женские шорты"
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">распродажа</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">шорты</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title" style="text-transform: initial;">Летние спортивные женские шорты</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">6500 &#8381;</p>
+                    <del>7200 &#8381;</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <div>
+
+      <div class="container">
+
+        <div class="testimonials-box">
+
+          <!--
+            - TESTIMONIALS
+          -->
+
+          <div class="testimonial">
+
+            <h2 class="title"></h2>
+
+            <div class="testimonial-card">
+
+              <img src="./assets/images/testimonial-1.jpg" alt="Лана С" class="testimonial-banner" width="80" height="80">
+
+              <p class="testimonial-name">Лана С</p>
+
+              <p class="testimonial-title" style="text-transform: initial;">Генеральный директор и основатель</p>
+
+              <img src="./assets/images/icons/quotes.svg" alt="quotation" class="quotation-img" width="26">
+
+              <p class="testimonial-desc">
+                Далеко-далеко за словесными горами, 
+                в стране гласных и согласных живут рыбные тексты. 
+                
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - CTA
+          -->
+
+          <div class="cta-container">
+
+            <img src="./assets/images/cta-banner.jpg" alt="Летняя коллекция" class="cta-banner">
+
+            <a href="#" class="cta-content">
+
+              <p class="discount">Скидка 25%</p>
+
+              <h2 class="cta-title">Летняя коллекция</h2>
+
+              <p class="cta-text">стартовая цена от 700 &#8381;</p>
+
+              <button class="cta-btn">Купить сейчас</button>
+
+            </a>
+
+          </div>
+
+
+
+          <!--
+            - SERVICE
+          -->
+
+          <div class="service">
+
+            <h2 class="title">Наши услуги</h2>
+
+            <div class="service-container">
+
+              <a href="#" class="service-item">
+
+                <div class="service-icon">
+                  <ion-icon name="boat-outline"></ion-icon>
+                </div>
+
+                <div class="service-content">
+
+                  <h3 class="service-title" style="text-transform: initial;">Доставка по всему миру</h3>
+                  <p class="service-desc">При заказе свыше 10000 &#8381;</p>
+
+                </div>
+
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="rocket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title" style="text-transform: initial;">Доставка на следующий день</h3>
+                  <p class="service-desc">Заказы только в России</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title" style="text-transform: initial;">Лучшая онлайн-поддержка</h3>
+                  <p class="service-desc">Часы работы: с 8 утра до 11 вечера</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title" style="text-transform: initial;">Условия возврата</h3>
+                  <p class="service-desc" style="text-transform: initial;">Легкий и бесплатный возврат</p>
+              
+                </div>
+              
+              </a>
+
+              <a href="#" class="service-item">
+              
+                <div class="service-icon">
+                  <ion-icon name="ticket-outline"></ion-icon>
+                </div>
+              
+                <div class="service-content">
+              
+                  <h3 class="service-title" style="text-transform: initial;">Возврат денежных средств в размере 30%</h3>
+                  <p class="service-desc">При заказе свыше 10000 &#8381;</p>
+              
+                </div>
+              
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <!--
+      - BLOG
+    -->
+
+    <div class="blog">
+
+      <div class="container">
+
+        <div class="blog-container has-scrollbar">
+
+          <div class="blog-card">
+
+            <a href="#">
+              <img src="./assets/images/blog-1.jpg" alt="Clothes Retail KPIs 2021 Guide for Clothes Executives" width="300" class="blog-banner">
+            </a>
+
+            <div class="blog-content">
+
+              <a href="#" class="blog-category">Мода</a>
+
+              <a href="#">
+                <h3 class="blog-title" style="text-transform: initial;">Руководство по ключевым показателям розничной торговли одеждой на 2021 год для руководителей магазинов одежды.</h3>
+              </a>
+
+              <p class="blog-meta">
+                От <cite>администратора</cite> / <time datetime="2022-04-06">В Апреле 2023 года</time>
+              </p>
+
+            </div>
+
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-2.jpg" alt="Модные тенденции на обочинах: Как выиграть битву за подбор персонала."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Одежда</a>
+          
+              <h3>
+                <a href="#" class="blog-title" style="text-transform: initial;">Модные тенденции на обочинах: Как выиграть битву за подбор персонала.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                От <cite> Дена Х</cite> / <time datetime="2022-01-18">В июне 2023 года</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-3.jpg" alt="Поставщики EBT: Претендуйте на свою долю онлайн-дохода SNAP."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Обувь</a>
+          
+              <h3>
+                <a href="#" class="blog-title" style="text-transform: initial;">Поставщики EBT: Претендуйте на свою долю онлайн-дохода SNAP.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                От<cite> Селены Е</cite> / <time datetime="2022-02-10">В июне 2023 года</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+          <div class="blog-card">
+          
+            <a href="#">
+              <img src="./assets/images/blog-4.jpg" alt="Модные тенденции на обочинах: Как выиграть битву за подбор персонала."
+                class="blog-banner" width="300">
+            </a>
+          
+            <div class="blog-content">
+          
+              <a href="#" class="blog-category">Электроника</a>
+          
+              <h3>
+                <a href="#" class="blog-title" style="text-transform: initial;">Модные тенденции на обочинах: Как выиграть битву за подбор персонала.</a>
+              </h3>
+          
+              <p class="blog-meta">
+                От <cite> Константина Ю</cite> / <time datetime="2022-03-15">Мая 2023 года</time>
+              </p>
+          
+            </div>
+          
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-category">
+
+      <div class="container">
+
+        <h2 class="footer-category-title">Каталог брендов</h2>
+
+        <div class="footer-category-box">
+
+          <h3 class="category-box-title">Мода :</h3>
+
+          <a href="#" class="footer-category-link">Футболки</a>
+          <a href="#" class="footer-category-link">Рубашки</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Шорты и джинсы</a>
+          <a href="#" class="footer-category-link">Куртки</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Платьи и фраки</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Внутренняя одежда</a>
+          <a href="#" class="footer-category-link">Чулки</a>
+
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Обувь :</h3>
+        
+          <a href="#" class="footer-category-link">Спортивная</a>
+          <a href="#" class="footer-category-link">Официальная</a>
+          <a href="#" class="footer-category-link">Ботинки</a>
+          <a href="#" class="footer-category-link">Повседневная</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Ковбойская Обувь</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">защитная обувь</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Обувь для вечеринок</a>
+          <a href="#" class="footer-category-link">Популярная</a>
+          <a href="#" class="footer-category-link">Новое</a>
+          <a href="#" class="footer-category-link">Туфли</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title" style="text-transform: initial;">Ювелирные изделия :</h3>
+        
+          <a href="#" class="footer-category-link">Ожерелье</a>
+          <a href="#" class="footer-category-link">Сережки</a>
+          <a href="#" class="footer-category-link">Кольца</a>
+          <a href="#" class="footer-category-link">Подвески</a>
+          <a href="#" class="footer-category-link">Хрусталь</a>
+          <a href="#" class="footer-category-link">Браслеты</a>
+          <a href="#" class="footer-category-link">Браслеты</a>
+          <a href="#" class="footer-category-link">цепь</a>
+          <a href="#" class="footer-category-link">Серёжки</a>
+          <a href="#" class="footer-category-link">Кольца</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">Косметика :</h3>
+        
+          <a href="#" class="footer-category-link">Шампунь</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Средство для мытья тела</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Средство для умывания лица</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Набор для макияжа</a>
+          <a href="#" class="footer-category-link">Помада</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Мыло для тела</a>
+          <a href="#" class="footer-category-link">Скраб</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Гель для волос</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Краска для волос</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Крем солнцезащинтый</a>
+          <a href="#" class="footer-category-link" style="text-transform: initial;">Лосьон для кожи</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title" style="text-transform: initial;">Популярные категории :</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Мода</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Электроника</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Косметика</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Здоровье</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Часы</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Товары</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Снижение цен</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Новое поступление</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Лучшие скидки</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Контакты</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Карта</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title" style="text-transform: initial;">Наша компания</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Доставка</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Юридическое уведомление</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Условия и положения</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">О нас</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Безопасный платеж</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Услуги</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Снижение цен</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Новые товары</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link" style="text-transform: initial;">Лучшие скидки</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Контакты</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Карта</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Контакты</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              ул. Северная 
+              Россия г. Краснодар
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">+ 123 456 789</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">ovl@mail.ru</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title" style="text-transform: initial;">Можете найти нас</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-vk"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+              </li>
+              
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright" style="text-transform: initial; text-align: left; padding-top: 15px; text-decoration: underline;">
+          ИП ЛАНА С. Магазин женской и мужской одежды <a href="#">Ovl</a> 
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
